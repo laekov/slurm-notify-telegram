@@ -22,7 +22,7 @@ postnotify() {
     done
 }
 
-if [ ! -f /vr/mail/$(whoami) ]
+if [ ! -f /var/mail/$(whoami) ]
 then
     mail -s 'init mail' $(whoami) </dev/null
 fi
